@@ -46,7 +46,7 @@ a {
 */
 
 .navbar {
-  background: #0e1212;
+  background: rgba(14, 18, 18, 0.9);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -97,7 +97,7 @@ a {
   display: flex;
   position: fixed;
   left: -100%;
-  top: 6.2rem;
+  top: 6.3rem;
   flex-direction: column;
   background-color: rgba(14, 18, 18, 0.9);
   width: 100%;
@@ -119,6 +119,14 @@ a {
   font-weight: 400;
   color: #fff;
   letter-spacing: 0.3rem;
+}
+
+.nav-link span {
+  color: #424242;
+}
+
+.active span {
+  color: #9042ff;
 }
 
 .nav-logo {
@@ -195,8 +203,8 @@ a {
   =====================
 */
 .about {
-  height: 100vh;
   padding-top: 12rem;
+  height: 100vh;
 }
 
 .about h2 {
@@ -209,6 +217,24 @@ a {
 
 .about p {
   color: #fff;
+}
+
+/*
+  =====================
+  Work
+  =====================
+*/
+.work {
+  padding-top: 12rem;
+  height: 100vh;
+}
+
+.work h2 {
+  letter-spacing: 0.8rem;
+}
+
+.work h2 span {
+  color: #9042ff;
 }
 @media screen and (min-width: 600px) {
   /* 
