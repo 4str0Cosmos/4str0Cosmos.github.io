@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+html,
+body {
+  font-size: 62.5%;
+  background: #0e1212;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2.4rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+/* 
+  ====================
+  Misc.
+  ====================
+*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* 
+  ====================
+  Navbar
+  ====================
+*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 1px;
+  margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #d9d9d9;
+}
+
+.bar:last-of-type {
+  margin-bottom: 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.nav-menu {
+  display: flex;
+  position: fixed;
+  left: -100%;
+  top: 7.8rem;
+  flex-direction: column;
+  background-color: rgba(14, 18, 18, 0.9);
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 2.5rem 0;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.3rem;
+}
+
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.8rem;
+}
+
+.nav-logo span {
+  color: #9042ff;
+}
+
+/* 
+  ====================
+  hero
+  ====================
+*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.8rem;
+}
+
+.hero img {
+  display: flex;
+  align-items: center;
+  max-width: 30rem;
+  margin: 0 auto 4.8rem auto;
+}
+
+.hero h1 {
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero p {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+}
+
+.hero p:first-of-type {
+  color: #424242;
+  margin-bottom: 0.2rem;
+}
+
+.hero p:last-of-type {
+  color: #424242;
+  max-width: 49rem;
+}
+
+.hero p:last-of-type span:first-of-type {
+  color: #9042ff;
+}
+
+.hero p span:last-of-type {
+  color: #fff;
+}
+
+.hero .btn {
+  background: none;
+  border: 0.3rem solid #9042ff;
+  color: #fff;
+  letter-spacing: 0.3rem;
+  padding: 2.4rem 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  /* 
+    ====================
+    Misc.
+    ====================
+  */
+  .container {
+    width: 75%;
+  }
+
+  /* 
+    ====================
+    hero
+    ====================
+  */
+  .hero img {
+    max-width: 35rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* 
+    ====================
+    Misc.
+    ====================
+  */
+  .container {
+    width: 65%;
+  }
+
+  /* 
+    ====================
+    hero
+    ====================
+  */
+  .hero img {
+    max-width: 35rem;
+  }
+  .hero .btn {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 65%;
+  }
+  /* 
+    ====================
+    Navbar
+    ====================
+  */
+  .nav-menu {
+    justify-content: initial;
+    flex-direction: row;
+
+    position: initial;
+    width: initial;
+  }
+  .nav-item {
+    margin-right: 2rem;
+  }
+
+  .nav-item:last-of-type {
+    margin-right: 0;
+  }
+  .hamburger {
+    display: none;
+  }
+  /* 
+    ====================
+    Navbar
+    ====================
+  */
+  .hero {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .hero img {
+    max-width: 35rem;
+    margin: 0;
+  }
+
+  .hero div {
+    max-width: 50rem;
+  }
+
+  .hero h1 {
+    font-size: 6rem;
+  }
+  .hero .btn {
+    width: 25rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero img {
+    max-width: 100rem;
+  }
+}
