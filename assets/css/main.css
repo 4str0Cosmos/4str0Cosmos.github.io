@@ -290,6 +290,7 @@ a {
     padding: 1rem 0;
   }
   .nav-menu {
+    background: none;
     justify-content: initial;
     flex-direction: row;
 
