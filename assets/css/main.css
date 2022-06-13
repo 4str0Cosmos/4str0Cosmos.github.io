@@ -18,12 +18,22 @@ h2 {
   margin-bottom: 2.4rem;
 }
 
+h3 {
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+}
+
 p {
   font-size: 1.6rem;
   margin-bottom: 2.4rem;
   max-width: 60rem;
   letter-spacing: 0.2rem;
   line-height: 2.4rem;
+}
+
+li {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
 }
 
 a {
@@ -214,9 +224,26 @@ a {
 #about h2 span {
   color: #9042ff;
 }
+#about h3 {
+  margin: 3em 0 2.4rem 0;
+  font-size: 2.4rem;
+  letter-spacing: 0.3rem;
+}
+
+#about span {
+  color: #9042ff;
+  margin-right: 0.3rem;
+}
 
 #about p {
   color: #eee;
+}
+
+#about .skills {
+  color: #424242;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /*
@@ -235,6 +262,26 @@ a {
 
 #work h2 span {
   color: #9042ff;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.projects div {
+  background: #9042ff;
+  width: 100%;
+  height: 24rem;
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects p {
+  font-size: 2.4rem;
 }
 @media screen and (min-width: 600px) {
   /* 
@@ -276,7 +323,40 @@ a {
   #hero .btn {
     width: 25rem;
   }
+  /* 
+    ====================
+    about
+    ====================
+  */
+  #about .skills {
+    flex-direction: row;
+    max-width: 80rem;
+  }
+
+  #about .skills li {
+    margin-right: 2rem;
+  }
 }
+
+@media screen and (min-width: 900px) {
+  /* 
+    ====================
+    work
+    ====================
+  */
+  .projects {
+    flex-direction: row;
+  }
+  .projects div {
+    width: 46%;
+    margin-right: 4%;
+  }
+
+  .projects div:last-of-type {
+    margin-right: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 65%;
@@ -336,6 +416,20 @@ a {
   }
   #hero .btn {
     width: 25rem;
+  }
+
+  /* 
+    ====================
+    work
+    ====================
+  */
+  .projects div {
+    width: 30%;
+    margin-right: 4.5%;
+  }
+
+  .projects div:last-of-type {
+    margin-right: 0;
   }
 }
 
