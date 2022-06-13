@@ -281,6 +281,16 @@ a {
 .projects p {
   font-size: 2.4rem;
 }
+
+/*
+  =====================
+  footer
+  =====================
+*/
+#footer p {
+  text-align: right;
+  max-width: initial;
+}
 @media screen and (min-width: 600px) {
   /* 
     ====================
