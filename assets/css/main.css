@@ -55,14 +55,19 @@ a {
   ====================
 */
 
-.navbar {
+header {
   background: rgba(14, 18, 18, 0.9);
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
+}
+.navbar {
+  /* background: rgba(14, 18, 18, 0.9); */
+  display: flex;
+  justify-content: space-between;
+
   align-items: center;
   padding: 2rem 0rem;
 }
