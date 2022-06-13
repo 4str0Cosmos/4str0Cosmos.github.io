@@ -117,12 +117,12 @@ a {
 .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #fff;
+  color: #424242;
   letter-spacing: 0.3rem;
 }
 
-.nav-link span {
-  color: #424242;
+.nav-link.active {
+  color: #fff;
 }
 
 .active span {
@@ -145,50 +145,50 @@ a {
   hero
   ====================
 */
-.hero {
+#hero {
   display: flex;
   flex-direction: column;
   padding-top: 12rem;
   height: 100vh;
 }
 
-.hero img {
+#hero img {
   display: flex;
   align-items: center;
   max-width: 22rem;
   margin: 0 auto 4.8rem auto;
 }
 
-.hero h1 {
+#hero h1 {
   letter-spacing: 0.2rem;
   margin-bottom: 1.2rem;
 }
 
-.hero p {
+#hero p {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   line-height: 2rem;
 }
 
-.hero p:first-of-type {
+#hero p:first-of-type {
   color: #424242;
   margin-bottom: 0.2rem;
 }
 
-.hero p:last-of-type {
+#hero p:last-of-type {
   color: #424242;
   max-width: 49rem;
 }
 
-.hero p:last-of-type span:first-of-type {
+#hero p:last-of-type span:first-of-type {
   color: #9042ff;
 }
 
-.hero p span:last-of-type {
+#hero p span:last-of-type {
   color: #fff;
 }
 
-.hero .btn {
+#hero .btn {
   background: none;
   border: 0.3rem solid #9042ff;
   color: #fff;
@@ -202,20 +202,20 @@ a {
   About
   =====================
 */
-.about {
+#about {
   padding-top: 12rem;
   height: 100vh;
 }
 
-.about h2 {
+#about h2 {
   letter-spacing: 0.8rem;
 }
 
-.about h2 span {
+#about h2 span {
   color: #9042ff;
 }
 
-.about p {
+#about p {
   color: #eee;
   font-weight: 300;
 }
@@ -225,16 +225,16 @@ a {
   Work
   =====================
 */
-.work {
+#work {
   padding-top: 12rem;
   height: 100vh;
 }
 
-.work h2 {
+#work h2 {
   letter-spacing: 0.8rem;
 }
 
-.work h2 span {
+#work h2 span {
   color: #9042ff;
 }
 @media screen and (min-width: 600px) {
@@ -252,7 +252,7 @@ a {
     hero
     ====================
   */
-  .hero img {
+  #hero img {
     max-width: 35rem;
   }
 }
@@ -271,10 +271,10 @@ a {
     hero
     ====================
   */
-  .hero img {
+  #hero img {
     max-width: 35rem;
   }
-  .hero .btn {
+  #hero .btn {
     width: 25rem;
   }
 }
@@ -313,35 +313,35 @@ a {
     Navbar
     ====================
   */
-  .hero {
+  #hero {
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: flex-start;
   }
 
-  .hero div {
+  #hero div {
     margin-top: 12.8rem;
   }
 
-  .hero img {
+  #hero img {
     max-width: 35rem;
     margin: 0;
   }
 
-  .hero div {
+  #hero div {
     max-width: 50rem;
   }
 
-  .hero h1 {
+  #hero h1 {
     font-size: 6rem;
   }
-  .hero .btn {
+  #hero .btn {
     width: 25rem;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .hero img {
+  #hero img {
     max-width: 50rem;
   }
 }
